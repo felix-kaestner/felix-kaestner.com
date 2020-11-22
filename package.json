@@ -1,7 +1,14 @@
 {
   "name": "felix-kaestner.com",
   "version": "1.0.0",
+  "repository": "https://github.com/felix-kaestner/felix-kaestner.com",
+  "homepage": "https://felix-kaestner.com",
   "private": true,
+  "author": {
+    "name": "Felix Kästner",
+    "email": "hello@felix-kaestner.com",
+    "url": "https://felix-kaestner.com"
+  },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
@@ -9,10 +16,15 @@
     "generate": "nuxt generate",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint:style": "stylelint **/*.{vue,css} --ignore-path .gitignore",
-    "lint": "yarn lint:js && yarn lint:style"
+    "lint": "yarn lint:js && yarn lint:style",
+    "format": "prettier **/*.{js,vue} -l",
+    "format:fix": "prettier **/*.{js,vue} --write"
   },
   "lint-staged": {
-    "*.{js,vue}": "eslint",
+    "*.{js,vue}": [
+      "eslint",
+      "prettier --write"
+    ],
     "*.{css,vue}": "stylelint"
   },
   "husky": {
