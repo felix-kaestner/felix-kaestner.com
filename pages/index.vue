@@ -1,24 +1,21 @@
 <template>
   <div class="container">
-    <div>
-      <h1 class="title">Hi</h1>
-      <p class="subtitle">My name is Felix Kästner</p>
-      <div>
-        <a
-          href="https://github.com/felix-kaestner/felix-kaestner.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
+    <h1 class="title">{{ page.title }}</h1>
+    <p class="subtitle">My name is Felix Kästner</p>
+    <nuxt-content :document="page" />
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  async asyncData({$content}) {
+    const page = await $content('hello').fetch()
+
+    return {
+      page,
+    }
+  },
+}
 </script>
 
 <style>
