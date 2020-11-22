@@ -8,7 +8,6 @@ export default {
     meta: [
       {charset: 'utf-8'},
       {name: 'viewport', content: 'width=device-width, initial-scale=1'},
-      {name: 'theme-color', content: '#03a9f4'},
       {
         hid: 'description',
         name: 'description',
@@ -55,4 +54,16 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
+
+  // PWA Configuration (https://pwa.nuxtjs.org/setup)
+  pwa: {
+    meta: {
+      title: 'Felix Kästner',
+      author: 'Felix Kästner',
+      theme_color: '#03a9f4',
+    },
+    manifest: {
+      start_url: '',
+    },
+  },
 }
