@@ -1,0 +1,65 @@
+{
+  "name": "felix-kaestner.com",
+  "version": "1.0.0",
+  "repository": "https://github.com/felix-kaestner/felix-kaestner.com",
+  "homepage": "https://felix-kaestner.com",
+  "private": true,
+  "sideEffects": false,
+  "author": {
+    "name": "Felix Kästner",
+    "email": "hello@felix-kaestner.com",
+    "url": "https://felix-kaestner.com"
+  },
+  "scripts": {
+    "dev": "nuxt",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint:style": "stylelint **/*.{vue,css} --ignore-path .gitignore",
+    "lint": "yarn lint:js && yarn lint:style",
+    "format": "prettier **/*.{js,vue} -l",
+    "format:fix": "prettier **/*.{js,vue} --write"
+  },
+  "lint-staged": {
+    "*.{js,vue}": [
+      "eslint",
+      "prettier --write"
+    ],
+    "*.{css,vue}": "stylelint"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "dependencies": {
+    "@nuxt/content": "^1.9.0",
+    "@nuxtjs/pwa": "^3.0.2",
+    "core-js": "^3.6.5",
+    "nuxt": "^2.14.6"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@nuxtjs/eslint-config": "^3.1.0",
+    "@nuxtjs/eslint-module": "^2.0.0",
+    "@nuxtjs/stylelint-module": "^4.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.10.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-nuxt": "^1.0.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.4.0",
+    "prettier": "^2.1.2",
+    "stylelint": "^13.7.2",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-standard": "^20.0.0"
+  },
+  "engines": {
+    "node": ">= 10.0.0",
+    "npm": ">= 6.8",
+    "yarn": ">= 1.4.x"
+  }
+}
