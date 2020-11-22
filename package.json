@@ -17,8 +17,8 @@
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint:style": "stylelint **/*.{vue,css} --ignore-path .gitignore",
     "lint": "yarn lint:js && yarn lint:style",
-    "format": "prettier **/*.{js,vue} -l",
-    "format:fix": "prettier **/*.{js,vue} --write"
+    "format": "prettier **/*.{js,vue} -l --ignore-path .gitignore",
+    "format:fix": "prettier **/*.{js,vue} --write --ignore-path .gitignore"
   },
   "lint-staged": {
     "*.{js,vue}": [
