@@ -62,8 +62,5 @@ export default {
       author: 'Felix Kästner',
       theme_color: '#03a9f4',
     },
-    manifest: {
-      start_url: '',
-    },
   },
 }
