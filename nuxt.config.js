@@ -41,6 +41,8 @@ export default {
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    // https://github.com/nuxt-community/google-fonts-module
+    '@nuxtjs/google-fonts',
   ],
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)
@@ -59,7 +61,6 @@ export default {
   },
 
   // https://github.com/nuxt-community/google-fonts-module
-  buildModules: ['@nuxtjs/google-fonts'],
   googleFonts: {
     families: {
       Montserrat: [100, 300],
