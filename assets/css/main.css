@@ -17,6 +17,19 @@ html {
   margin: 0;
 }
 
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #303030;
+    color: #fafafa;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    color: #121212;
+  }
+}
+
 h1 {
   font-size: 3.5em;
   font-weight: 600;
