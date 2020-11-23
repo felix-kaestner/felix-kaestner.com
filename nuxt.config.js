@@ -15,13 +15,7 @@ export default {
           'Felix Kästner. A software developer specialized in mobile and ubiquitous computing.',
       },
     ],
-    link: [
-      {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
-      {
-        rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Montserrat:300,600&display=swap',
-      },
-    ],
+    link: [{rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}],
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
@@ -62,5 +56,14 @@ export default {
       author: 'Felix Kästner',
       theme_color: '#03a9f4',
     },
+  },
+
+  // https://github.com/nuxt-community/google-fonts-module
+  buildModules: ['@nuxtjs/google-fonts'],
+  googleFonts: {
+    families: {
+      Montserrat: [100, 300],
+    },
+    display: 'swap',
   },
 }
