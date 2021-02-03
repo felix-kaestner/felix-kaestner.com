@@ -10,6 +10,10 @@ html {
   box-sizing: border-box;
 }
 
+::selection {
+  background: rgba(3, 169, 244, 0.2);
+}
+
 *,
 *::before,
 *::after {
@@ -17,17 +21,14 @@ html {
   margin: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #303030;
-    color: #fafafa;
-  }
+body {
+  color: #121212;
+  transition: all 350ms ease-in-out;
 }
 
-@media (prefers-color-scheme: light) {
-  body {
-    color: #121212;
-  }
+.dark-mode body {
+  background-color: #303030;
+  color: #fafafa;
 }
 
 h1 {

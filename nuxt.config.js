@@ -43,6 +43,10 @@ export default {
     '@nuxt/content',
     // https://github.com/nuxt-community/google-fonts-module
     '@nuxtjs/google-fonts',
+    // https://github.com/nuxt-community/svg-module
+    '@nuxtjs/svg',
+    // https://github.com/nuxt-community/color-mode-module
+    '@nuxtjs/color-mode',
   ],
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)
