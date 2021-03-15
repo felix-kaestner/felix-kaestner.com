@@ -19,20 +19,15 @@
     "lint:style": "stylelint **/*.{vue,css} --ignore-path .gitignore",
     "lint": "yarn lint:js && yarn lint:style",
     "format": "prettier **/*.{js,vue} -l --ignore-path .gitignore",
-    "format:fix": "prettier **/*.{js,vue} --write --ignore-path .gitignore"
+    "format:fix": "prettier **/*.{js,vue} --write --ignore-path .gitignore",
+    "prepare": "husky install"
   },
   "lint-staged": {
     "*.{js,vue}": [
-      "eslint",
-      "prettier --write"
+      "prettier --write",
+      "eslint"
     ],
     "*.{css,vue}": "stylelint"
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged"
-    }
   },
   "dependencies": {
     "@nuxt/content": "^1.14.0",
