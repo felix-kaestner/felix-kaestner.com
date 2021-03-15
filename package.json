@@ -35,11 +35,11 @@
     }
   },
   "dependencies": {
-    "@nuxt/content": "^1.13.1",
+    "@nuxt/content": "^1.14.0",
     "@nuxtjs/color-mode": "^2.0.3",
     "@nuxtjs/pwa": "^3.3.5",
     "core-js": "^3.9.0",
-    "nuxt": "^2.15.2"
+    "nuxt": "^2.15.3"
   },
   "devDependencies": {
     "@commitlint/cli": "^12.0.0",
@@ -50,7 +50,7 @@
     "@nuxtjs/stylelint-module": "^4.0.0",
     "@nuxtjs/svg": "^0.1.12",
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.20.0",
+    "eslint": "^7.22.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-nuxt": "^1.0.0",
     "eslint-plugin-prettier": "^3.3.1",
