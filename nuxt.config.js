@@ -47,6 +47,8 @@ export default {
     '@nuxtjs/svg',
     // https://github.com/nuxt-community/color-mode-module
     '@nuxtjs/color-mode',
+    // https://google-analytics.nuxtjs.org/setup
+    '@nuxtjs/google-analytics',
   ],
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)
@@ -70,5 +72,16 @@ export default {
       Montserrat: [100, 300],
     },
     display: 'swap',
+  },
+
+  // https://google-analytics.nuxtjs.org/setup
+  googleAnalytics: {
+    id: process.env.GOOGLE_ANALYTICS_ID, // Use as fallback if no runtime config is provided
+    disabled: true,
+  },
+  publicRuntimeConfig: {
+    googleAnalytics: {
+      id: process.env.GOOGLE_ANALYTICS_ID,
+    },
   },
 }
