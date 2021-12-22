@@ -68,29 +68,37 @@ const Home = (): JSX.Element => (
 
     <div className="container">
       <h1>Hi.</h1>
-      <p className="subtitle">My name is Felix Kästner</p>
+      <p className="subtitle">My name is Felix Kästner.</p>
       <div>
         <p>
-          I am a software developer specialized in mobile and ubiquitous computing, cloud native
-          applications and data visualization. I live in Dresden where I study Computer Science at{' '}
+          I am a software developer and solutions architect specialized in mobile and ubiquitous
+          computing. I live in Dresden where I studied Computer Science at{' '}
           <a href="https://tu-dresden.de" rel="nofollow noopener noreferrer" target="_blank">
             Technische Universität Dresden
           </a>
-          , currently working towards my Master’s Degree.
+          , receiving the academic title <i>Master of Science</i>.
         </p>
 
         <p>
-          Until recently I developed an interactive WebGL2-powered, highly performant large-scale
-          data visualization for traffic analysis as part of the{' '}
+          I work as a developer for the{' '}
+          <a
+            href="https://radverkehr-in-deutschland.de"
+            rel="nofollow noopener noreferrer"
+            target="_blank"
+          >
+            RiDE
+          </a>{' '}
+          (previously{' '}
           <a href="https://www.movebis.org" rel="nofollow noopener noreferrer" target="_blank">
             Movebis
-          </a>{' '}
-          research project. Besides, I currently work on developing mobile applications (mostly
+          </a>
+          ) research project doing WebGL-powered data visualizations of large geographic datasets
+          for traffic analysis. Besides, I currently work on developing mobile applications (mostly
           Android) together with my good friend{' '}
           <a href="https://philippmatth.es" rel="nofollow noopener noreferrer" target="_blank">
             Philipp Matthes
           </a>
-          . We are currently prototyping{' '}
+          . We previously prototyped{' '}
           <a
             href="https://github.com/peerbridge"
             rel="nofollow noopener noreferrer"
@@ -98,7 +106,7 @@ const Home = (): JSX.Element => (
           >
             PeerBridge
           </a>{' '}
-          an anonymous messenger based on Blockchain and DPoS. Additionally, we are rebuilding the{' '}
+          an anonymous messenger based on Blockchain and DPoS. Additionally, we were rebuilding the{' '}
           <a href="https://output-dd.de" rel="nofollow noopener noreferrer" target="_blank">
             OUTPUT.DD
           </a>{' '}
@@ -108,11 +116,11 @@ const Home = (): JSX.Element => (
           .
         </p>
         <p>
-          I am currently employed at{' '}
+          I was previously employed at{' '}
           <a href="https://markenzoo.de" rel="nofollow noopener noreferrer" target="_blank">
             MARKENZOO
           </a>
-          , where I work as a web developer, creating and maintaining a variety of different
+          , where I worked as a web developer, creating and maintaining a variety of different
           projects mainly focused around{' '}
           <a href="https://contao.org" rel="nofollow noopener noreferrer" target="_blank">
             Contao CMS
@@ -120,8 +128,7 @@ const Home = (): JSX.Element => (
           .
         </p>
         <p>
-          If you find my work interesting, you might want to have a look at my upcoming conference
-          talks at{' '}
+          If you find my work interesting, you might want to have a look at past conference talks at{' '}
           <a
             href="https://output-dd.de/projekte/"
             rel="nofollow noopener noreferrer"
@@ -133,15 +140,23 @@ const Home = (): JSX.Element => (
           <a href="https://philippmatth.es" rel="nofollow noopener noreferrer" target="_blank">
             Philipp Matthes
           </a>
-          . We will be hosting presentations on the topics of{' '}
+          . We were hosting presentations on the topics of{' '}
           <a
             href="https://output-dd.de/blog/project-post/microservices-devops-und-containerisierung-im-cloud-computing/"
             rel="nofollow noopener noreferrer"
             target="_blank"
           >
             &quot;Microservices, DevOps and Cloud Computing&quot;
-          </a>{' '}
-          and{' '}
+          </a>
+          (
+          <a
+            href="https://www.youtube.com/watch?v=QOMU53123Rc"
+            rel="nofollow noopener noreferrer"
+            target="_blank"
+          >
+            YouTube
+          </a>
+          ) and{' '}
           <a
             href="https://output-dd.de/blog/project-post/kryptografie-in-messengern/"
             rel="nofollow noopener noreferrer"
@@ -149,7 +164,15 @@ const Home = (): JSX.Element => (
           >
             &quot;Cryptography in messengers&quot;
           </a>
-          .
+          (
+          <a
+            href="https://www.youtube.com/watch?v=_o9YjtyxKbs"
+            rel="nofollow noopener noreferrer"
+            target="_blank"
+          >
+            YouTube
+          </a>
+          ).
         </p>
         <p>
           I strive to learn new things and develop skills in a range of different areas. If you have
@@ -172,8 +195,17 @@ const Home = (): JSX.Element => (
           </a>
           .
         </p>
+        <p>
+          I&apos;m currently accepting freelance work. You can contact me via{' '}
+          <a
+            href="mailto:hello@felix-kaestner.com"
+            rel="nofollow noopener noreferrer"
+            target="_blank"
+          >
+            hello@felix-kaestner.com
+          </a>
+        </p>
         <p>Fun fact: I am the winner of the 1st Thuringian Computer Science Competition.</p>
-        <p>Outside of programming, I am a coffee lover!</p>
       </div>
     </div>
 
