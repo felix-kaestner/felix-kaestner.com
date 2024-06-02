@@ -9,9 +9,10 @@
     "strict": true,
     "allowJs": false,
     "skipLibCheck": true,
-    "noImplicitAny": true,
+    "noImplicitAny": false,
     "isolatedModules": true,
     "esModuleInterop": true,
+    "strictNullChecks": true,
     "resolveJsonModule": true,
     "experimentalDecorators": true,
     "useDefineForClassFields": true,
@@ -23,9 +24,14 @@
     "paths": {
       "~/*": ["*"]
     },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
     "noEmit": true,
     "incremental": true
   },
-  "exclude": ["node_modules", ".next", "out"],
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js"]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules", ".next"]
 }
