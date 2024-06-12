@@ -4,7 +4,7 @@ import {baseUrl} from 'app/sitemap'
 export async function GET() {
   let posts = getBlogPosts()
 
-  const itemsXml = posts
+  let items = posts
     .sort((a, b) => {
       if (new Date(a.metadata.publishedAt) > new Date(b.metadata.publishedAt)) {
         return -1
@@ -24,13 +24,13 @@ export async function GET() {
     )
     .join('\n')
 
-  const rssFeed = `<?xml version="1.0" encoding="UTF-8" ?>
+  let rssFeed = `<?xml version="1.0" encoding="UTF-8" ?>
   <rss version="2.0">
     <channel>
         <title>Felix Kästner</title>
         <link>${baseUrl}</link>
         <description>Blog Article RSS Feed</description>
-        ${itemsXml}
+        ${items}
     </channel>
   </rss>`
 

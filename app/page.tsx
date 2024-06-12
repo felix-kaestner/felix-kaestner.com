@@ -7,7 +7,7 @@ export default function Page() {
         Felix Kästner
       </h1>
       <p className="mb-4">
-        {`I'm a Senior Software Engineer, Vim enthusiast and certified
+        {`I'm a Senior Software Engineer, (Neo)Vim enthusiast and certified
         Google Cloud Digital Leader specializing in cloud-native technologies.`}
       </p>
       <div className="my-8">

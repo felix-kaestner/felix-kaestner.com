@@ -1,16 +1,15 @@
 export function formatDate(date: string, includeRelative = false) {
-  let currentDate = new Date()
   if (!date.includes('T')) {
     date = `${date}T00:00:00`
   }
   let targetDate = new Date(date)
 
+  let currentDate = new Date()
   let yearsAgo = currentDate.getFullYear() - targetDate.getFullYear()
   let monthsAgo = currentDate.getMonth() - targetDate.getMonth()
   let daysAgo = currentDate.getDate() - targetDate.getDate()
 
   let formattedDate = ''
-
   if (yearsAgo > 0) {
     formattedDate = `${yearsAgo}y ago`
   } else if (monthsAgo > 0) {
